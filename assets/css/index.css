@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 0px;               /* para el ancho de el escrol */
+  }
+/*! Barra de navegación */
+.contenedor-barra-navegacion{
+    background-color: #000015;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    height: 10vh          !important;
+    width: 100%;
+    justify-content: space-around;
+    box-shadow: 2px 2px 4px #1f244b;
+    position: fixed;
+}
+.barra-navegacion{}
+.menu{
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+}
+.menu > li > a {
+    color: #49498e;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: none;
+    font-size: 9vh  !important;
+    margin: 0 20px  0 20px;
+    
+}
+/*! Fin de Barra de navegación */
+.color1 {color: #000015;}
+.color2 {color: #1f244b;}
+.color3 {color: #49498e;}
+.color4 {color: #7f74db;}
+.color5 {color: #c2a2ff;}
+/*! Contenedor de sobremi */
+.contenedor-seccion-sobremi{
+    background: #1F244B;
+    background: radial-gradient(at left center, #1F244B, #49498E);
+    padding-top: 60px;
+    height: 100vh !important;
+    width: 100%;
+    transition-duration: 2s;
+}
+.contenedor-sobremi{
+    display: grid;
+    grid-template: "img-sobremi texto-sobremi"/ 
+                        1fr         1fr ;   
+    height: 90vh !important;
+    width: 100%;   
+    align-items: center;    
+}
+.img-sobremi{
+    grid-area: img-sobremi;
+    display: flex;
+    justify-content: center;  
+    width: 100vh;
+    height: 80vh !important;
+} 
+.img > img{
+    border-radius: 50%;
+    height: 80vh !important;
+    width: 80vh;
+    float: left;
+    border: 15px solid #1f244b;
+}
+.texto-sobremi{
+    grid-area: texto-sobremi;
+    font-size: 30px !important;
+}
+.texto{
+    padding-top: 60px !important;
+    padding-right: 20px;
+}
+/*! Fin de Contenedor de sobremi */
+
+/* !contenido mis proyectos */
+.proyectos{
+ background-color: #ccbaee;
+ padding-top: 60px;
+ height: 100vh !important;
+ width: 100%;
+}
+.contenedor-proyectos{
+    display: grid;
+    gap: 30px;
+    grid-template: " titulo         titulo     " 
+                    "proyecto-1    proyecto-2   "10px / 
+                       1fr           1fr         ;
+
+}
+.titulo{
+    grid-area: titulo;
+    font-size: 9vh  !important;
+    text-align: center;
+}
+.proyecto-1{
+    grid-area: proyecto-1;
+    text-align: center;   
+}
+.contenedor-proyecto-1{
+    padding: 0px 90px 0px 90px ;
+}
+.proyecto-2{
+    grid-area: proyecto-2;
+}
+.img-proyecto{
+    display: flex;
+    justify-content: center;
+}
+.img-proyecto > img{
+    height: 60vh;
+    width: 60vh;
+    border-radius: 0 20px 0 20px;
+    
+}
+.style-text-proyecto{
+    
+}
+/* !Fin de contenido mis proyectos */
